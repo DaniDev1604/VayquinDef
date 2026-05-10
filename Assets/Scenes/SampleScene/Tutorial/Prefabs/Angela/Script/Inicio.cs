@@ -3,7 +3,7 @@ using UnityEngine;
 public class Inicio : MonoBehaviour
 {
     [Header("Asignar en el Inspector")]
-    public GameObject canvasInstrucciones; // El Canvas con el panel e instrucciones
+    public GameObject CanvasMenu; // El Canvas con el panel e instrucciones
     public AudioSource sonido;             // El sonido que quieres reproducir
 
     private bool yaMostrado = false;
@@ -13,7 +13,7 @@ public class Inicio : MonoBehaviour
         // Si ya se mostró, no volver a mostrar
         if (!yaMostrado)
         {
-            canvasInstrucciones.SetActive(true);
+            CanvasMenu.SetActive(true);
             if (sonido != null)
             {
                 sonido.Play();
@@ -25,9 +25,9 @@ public class Inicio : MonoBehaviour
     private void OnTriggerExit(Collider other)
     {
         // Al salir de la zona, ocultar el panel y detener el sonido
-        if (canvasInstrucciones.activeSelf)
+        if (CanvasMenu.activeSelf)
         {
-            canvasInstrucciones.SetActive(false);
+            CanvasMenu.SetActive(false);
         }
         if (sonido != null && sonido.isPlaying)
         {

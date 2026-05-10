@@ -4,15 +4,24 @@ using System.Collections;
 
 public class DeathManager : MonoBehaviour
 {
+    public static DeathManager instance;
+
     [Header("Fade")]
     public Image fadeImage;
     public float fadeSpeed = 2f;
 
     [Header("Respawn")]
-    public Transform spawnPoint;
+    public Transform[] spawnPoints;
     public Transform xrOrigin;
 
     private bool isDead = false;
+    private int currentZoneIndex = 0;
+
+    void Awake()
+    {
+        if (instance == null) instance = this;
+        else Destroy(gameObject);
+    }
 
     void Update()
     {
@@ -22,13 +31,24 @@ public class DeathManager : MonoBehaviour
         }
     }
 
+    public void SetCurrentZone(int zoneIndex)
+    {
+        if (zoneIndex >= 0 && zoneIndex < spawnPoints.Length)
+        {
+            currentZoneIndex = zoneIndex;
+        }
+        else
+        {
+            Debug.LogWarning($"ZoneIndex {zoneIndex} fuera de rango. Revisa el array spawnPoints.");
+        }
+    }
+
     IEnumerator FadeAndRespawn()
     {
         isDead = true;
 
         float alpha = 0;
 
-        // Fade a negro
         while (alpha < 1)
         {
             alpha += Time.deltaTime * fadeSpeed;
@@ -38,20 +58,32 @@ public class DeathManager : MonoBehaviour
 
         yield return new WaitForSeconds(1f);
 
-        // Resetear vidas
         GameManager.instance.currentLives = GameManager.instance.maxLives;
 
-        // Obtener cámara
+        Transform spawnPoint = spawnPoints[currentZoneIndex];
         Transform cameraTransform = xrOrigin.GetComponentInChildren<Camera>().transform;
 
-        // Calcular offset
-        Vector3 offset = cameraTransform.position - xrOrigin.position;
-
-        // Reposicionar correctamente
-        xrOrigin.position = spawnPoint.position - offset;
+        // 1. Rotar primero
         xrOrigin.rotation = Quaternion.Euler(0, spawnPoint.rotation.eulerAngles.y, 0);
 
-        // Fade de regreso
+        // 2. Mover al spawn point
+        xrOrigin.position = spawnPoint.position;
+
+        // 3. Corregir el offset que dejó la cámara en X y Z
+        yield return null; // esperar un frame para que Unity actualice posiciones
+        Vector3 diff = new Vector3(
+            cameraTransform.position.x - spawnPoint.position.x,
+            0,
+            cameraTransform.position.z - spawnPoint.position.z
+        );
+        xrOrigin.position -= diff;
+
+        Debug.Log($"[Respawn] Cámara DESPUÉS: {cameraTransform.position}");
+        Debug.Log($"[Respawn] SpawnPoint era: {spawnPoint.position}");
+        Debug.Log($"[Respawn] Diff corregido: {diff}");
+
+        ResetZone(currentZoneIndex);
+
         while (alpha > 0)
         {
             alpha -= Time.deltaTime * fadeSpeed;
@@ -60,5 +92,10 @@ public class DeathManager : MonoBehaviour
         }
 
         isDead = false;
+    }
+
+    void ResetZone(int zoneIndex)
+    {
+        Debug.Log($"Reiniciando zona {zoneIndex}");
     }
 }

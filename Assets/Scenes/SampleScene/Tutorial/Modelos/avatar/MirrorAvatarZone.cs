@@ -9,8 +9,12 @@ public class MirrorAvatarZone : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+        Debug.Log("Entró: " + other.name);
+
         if (other.CompareTag("MainCamera"))
         {
+            Debug.Log("Es la cámara");
+
             fullAvatar.SetActive(true);
 
             leftHandVR.SetActive(false);

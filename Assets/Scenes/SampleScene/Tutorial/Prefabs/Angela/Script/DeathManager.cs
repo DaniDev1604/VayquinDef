@@ -97,13 +97,13 @@ public class DeathManager : MonoBehaviour
     void ResetZone(int zoneIndex)
     {
         Debug.Log($"Reiniciando zona {zoneIndex}");
+        LevelCompletionManager.instance?.Reset();
 
-        // Resetear todos los enemigos de la escena
         EnemyAI[] enemigos = FindObjectsByType<EnemyAI>(FindObjectsSortMode.None);
         foreach (EnemyAI enemigo in enemigos)
         {
-            enemigo.gameObject.SetActive(true); // por si estaba muerto
+            enemigo.gameObject.SetActive(true);
             enemigo.ResetEnemy();
         }
-    }
+    }   
 }

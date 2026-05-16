@@ -30,6 +30,7 @@ public class EnemyHealth : MonoBehaviour
     {
         isDead = true;
         Debug.Log("💀 Enemigo eliminado");
+        LevelCompletionManager.instance?.EnemigoMuerto();
         Destroy(gameObject);
     }
 }

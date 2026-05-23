@@ -283,6 +283,22 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 172128629}
     m_Modifications:
+    - target: {fileID: 2226918607645961985, guid: 7d1cd72e5582f4e4ea411f7cfc8cb077, type: 3}
+      propertyPath: m_Materials.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2226918607645961985, guid: 7d1cd72e5582f4e4ea411f7cfc8cb077, type: 3}
+      propertyPath: 'm_Materials.Array.data[1]'
+      value: 
+      objectReference: {fileID: -876546973899608171, guid: 420298fbcfc95dd49926ac5bc9dffd52, type: 3}
+    - target: {fileID: 6787216346621878099, guid: 7d1cd72e5582f4e4ea411f7cfc8cb077, type: 3}
+      propertyPath: m_Materials.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6787216346621878099, guid: 7d1cd72e5582f4e4ea411f7cfc8cb077, type: 3}
+      propertyPath: 'm_Materials.Array.data[1]'
+      value: 
+      objectReference: {fileID: -876546973899608171, guid: 420298fbcfc95dd49926ac5bc9dffd52, type: 3}
     - target: {fileID: 7272436414478190776, guid: 7d1cd72e5582f4e4ea411f7cfc8cb077, type: 3}
       propertyPath: m_Name
       value: tree_trunk (1)
@@ -327,6 +343,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8948057875523266408, guid: 7d1cd72e5582f4e4ea411f7cfc8cb077, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: -876546973899608171, guid: 420298fbcfc95dd49926ac5bc9dffd52, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1655,6 +1675,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: recolect Variant (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 3728494227473914523, guid: 16b591fd2e68a60418b0f95ae5965cea, type: 3}
+      propertyPath: m_Materials.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3728494227473914523, guid: 16b591fd2e68a60418b0f95ae5965cea, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: -876546973899608171, guid: 45f5a155fcda101439535a617e435bcd, type: 3}
+    - target: {fileID: 3728494227473914523, guid: 16b591fd2e68a60418b0f95ae5965cea, type: 3}
+      propertyPath: 'm_Materials.Array.data[1]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 083fdb8520f3d724393a402163e7cac0, type: 2}
     - target: {fileID: 8489291969926105370, guid: 16b591fd2e68a60418b0f95ae5965cea, type: 3}
       propertyPath: pickupSound
       value: 
@@ -3496,6 +3528,22 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 172128629}
     m_Modifications:
+    - target: {fileID: 2226918607645961985, guid: 7d1cd72e5582f4e4ea411f7cfc8cb077, type: 3}
+      propertyPath: m_Materials.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2226918607645961985, guid: 7d1cd72e5582f4e4ea411f7cfc8cb077, type: 3}
+      propertyPath: 'm_Materials.Array.data[1]'
+      value: 
+      objectReference: {fileID: -876546973899608171, guid: 420298fbcfc95dd49926ac5bc9dffd52, type: 3}
+    - target: {fileID: 6787216346621878099, guid: 7d1cd72e5582f4e4ea411f7cfc8cb077, type: 3}
+      propertyPath: m_Materials.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6787216346621878099, guid: 7d1cd72e5582f4e4ea411f7cfc8cb077, type: 3}
+      propertyPath: 'm_Materials.Array.data[1]'
+      value: 
+      objectReference: {fileID: -876546973899608171, guid: 420298fbcfc95dd49926ac5bc9dffd52, type: 3}
     - target: {fileID: 7272436414478190776, guid: 7d1cd72e5582f4e4ea411f7cfc8cb077, type: 3}
       propertyPath: m_Name
       value: tree_trunk (3)
@@ -3552,6 +3600,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8948057875523266408, guid: 7d1cd72e5582f4e4ea411f7cfc8cb077, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: -876546973899608171, guid: 420298fbcfc95dd49926ac5bc9dffd52, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7717,6 +7769,22 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 172128629}
     m_Modifications:
+    - target: {fileID: 2226918607645961985, guid: 7d1cd72e5582f4e4ea411f7cfc8cb077, type: 3}
+      propertyPath: m_Materials.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2226918607645961985, guid: 7d1cd72e5582f4e4ea411f7cfc8cb077, type: 3}
+      propertyPath: 'm_Materials.Array.data[1]'
+      value: 
+      objectReference: {fileID: -876546973899608171, guid: 420298fbcfc95dd49926ac5bc9dffd52, type: 3}
+    - target: {fileID: 6787216346621878099, guid: 7d1cd72e5582f4e4ea411f7cfc8cb077, type: 3}
+      propertyPath: m_Materials.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6787216346621878099, guid: 7d1cd72e5582f4e4ea411f7cfc8cb077, type: 3}
+      propertyPath: 'm_Materials.Array.data[1]'
+      value: 
+      objectReference: {fileID: -876546973899608171, guid: 420298fbcfc95dd49926ac5bc9dffd52, type: 3}
     - target: {fileID: 7272436414478190776, guid: 7d1cd72e5582f4e4ea411f7cfc8cb077, type: 3}
       propertyPath: m_Name
       value: tree_trunk (4)
@@ -7773,6 +7841,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8948057875523266408, guid: 7d1cd72e5582f4e4ea411f7cfc8cb077, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: -876546973899608171, guid: 420298fbcfc95dd49926ac5bc9dffd52, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7954,6 +8026,22 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 172128629}
     m_Modifications:
+    - target: {fileID: 2226918607645961985, guid: 7d1cd72e5582f4e4ea411f7cfc8cb077, type: 3}
+      propertyPath: m_Materials.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2226918607645961985, guid: 7d1cd72e5582f4e4ea411f7cfc8cb077, type: 3}
+      propertyPath: 'm_Materials.Array.data[1]'
+      value: 
+      objectReference: {fileID: -876546973899608171, guid: 420298fbcfc95dd49926ac5bc9dffd52, type: 3}
+    - target: {fileID: 6787216346621878099, guid: 7d1cd72e5582f4e4ea411f7cfc8cb077, type: 3}
+      propertyPath: m_Materials.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6787216346621878099, guid: 7d1cd72e5582f4e4ea411f7cfc8cb077, type: 3}
+      propertyPath: 'm_Materials.Array.data[1]'
+      value: 
+      objectReference: {fileID: -876546973899608171, guid: 420298fbcfc95dd49926ac5bc9dffd52, type: 3}
     - target: {fileID: 7272436414478190776, guid: 7d1cd72e5582f4e4ea411f7cfc8cb077, type: 3}
       propertyPath: m_Name
       value: tree_trunk (4)
@@ -8010,6 +8098,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8948057875523266408, guid: 7d1cd72e5582f4e4ea411f7cfc8cb077, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: -876546973899608171, guid: 420298fbcfc95dd49926ac5bc9dffd52, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8183,6 +8275,22 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 172128629}
     m_Modifications:
+    - target: {fileID: 2226918607645961985, guid: 7d1cd72e5582f4e4ea411f7cfc8cb077, type: 3}
+      propertyPath: m_Materials.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2226918607645961985, guid: 7d1cd72e5582f4e4ea411f7cfc8cb077, type: 3}
+      propertyPath: 'm_Materials.Array.data[1]'
+      value: 
+      objectReference: {fileID: -876546973899608171, guid: 420298fbcfc95dd49926ac5bc9dffd52, type: 3}
+    - target: {fileID: 6787216346621878099, guid: 7d1cd72e5582f4e4ea411f7cfc8cb077, type: 3}
+      propertyPath: m_Materials.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6787216346621878099, guid: 7d1cd72e5582f4e4ea411f7cfc8cb077, type: 3}
+      propertyPath: 'm_Materials.Array.data[1]'
+      value: 
+      objectReference: {fileID: -876546973899608171, guid: 420298fbcfc95dd49926ac5bc9dffd52, type: 3}
     - target: {fileID: 7272436414478190776, guid: 7d1cd72e5582f4e4ea411f7cfc8cb077, type: 3}
       propertyPath: m_Name
       value: tree_trunk (3)
@@ -8239,6 +8347,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8948057875523266408, guid: 7d1cd72e5582f4e4ea411f7cfc8cb077, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: -876546973899608171, guid: 420298fbcfc95dd49926ac5bc9dffd52, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9417,6 +9529,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: recolect Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 3728494227473914523, guid: 16b591fd2e68a60418b0f95ae5965cea, type: 3}
+      propertyPath: m_Materials.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3728494227473914523, guid: 16b591fd2e68a60418b0f95ae5965cea, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 083fdb8520f3d724393a402163e7cac0, type: 2}
+    - target: {fileID: 3728494227473914523, guid: 16b591fd2e68a60418b0f95ae5965cea, type: 3}
+      propertyPath: 'm_Materials.Array.data[1]'
+      value: 
+      objectReference: {fileID: -876546973899608171, guid: 45f5a155fcda101439535a617e435bcd, type: 3}
     - target: {fileID: 8489291969926105370, guid: 16b591fd2e68a60418b0f95ae5965cea, type: 3}
       propertyPath: pickupSound
       value: 

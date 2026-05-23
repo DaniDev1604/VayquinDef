@@ -8921,6 +8921,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: recolect Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 3728494227473914523, guid: 16b591fd2e68a60418b0f95ae5965cea, type: 3}
+      propertyPath: m_Materials.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3728494227473914523, guid: 16b591fd2e68a60418b0f95ae5965cea, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: -876546973899608171, guid: 45f5a155fcda101439535a617e435bcd, type: 3}
+    - target: {fileID: 3728494227473914523, guid: 16b591fd2e68a60418b0f95ae5965cea, type: 3}
+      propertyPath: 'm_Materials.Array.data[1]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 083fdb8520f3d724393a402163e7cac0, type: 2}
     - target: {fileID: 8489291969926105370, guid: 16b591fd2e68a60418b0f95ae5965cea, type: 3}
       propertyPath: pickupSound
       value: 
